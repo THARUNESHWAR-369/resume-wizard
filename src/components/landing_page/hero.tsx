@@ -6,7 +6,7 @@ import heroImg from "@public/images/hero/hero.png";
 
 export const Hero = () => {
   return (
-    <section className="hero h-fit mb-3">
+    <section className="hero h-fit mb-[8em] pt-[2em]">
       <div className="hero-container pt-[1em] relative">
         <div className="hero-logo absolute mt-[1em]">
           <div className="nav-logo flex flex-row w-fit align-middle items-center gap-[0.3em]">
