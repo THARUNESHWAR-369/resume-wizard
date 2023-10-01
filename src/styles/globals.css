@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: whitesmoke;
+  --foreground-accent-color-1: #f43721;
+  --foreground-accent-color-2: #f45b19;
+  --foreground-accent-color-3: #fc9d04;
+  --foreground-accent-color-4: #fdbb02;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: #222;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: var(--background-rgb);
+}
+
+
+.divider {
+  height: 1px;
+  background-color: #80808024;
+  width: 100%;
+}
+
+/* ------------------ Text shadow --------------- */
+.text-shadow-1 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-shadow-15 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.text-shadow-2 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.text-shadow-25 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-3 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.text-shadow-35 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.35);
+}
+
+.text-shadow-4 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.text-shadow-45 {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ------------------ box shadow --------------- */
+.box-shadow-1 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.box-shadow-15 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.box-shadow-2 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box-shadow-25 {
+  box-shadow: 1px -1px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.box-shadow-3 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.box-shadow-35 {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+
+
+
