@@ -3,6 +3,7 @@ import "@styles/landing_page/landing_page_mediaquery.css";
 import "@styles/landing_page/landing_page.css";
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
+import Footer from '@components/footer';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
+      <Footer/>
     </html>
   );
 }
