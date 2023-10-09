@@ -17,7 +17,7 @@ function Customer() {
         <div className="divider"></div>
         <div className="customer-content mt-[5em] px-[1em]">
           <div className="customer-cards flex flex-wrap gap-[4em] justify-center">
-            <div className="customer-card bg-white rounded-md w-[15em] h-[17em] relative box-shadow-1">
+            <div className="customer-card bg-white rounded-md w-[15em] h-[19em] relative box-shadow-1">
               <div className="customer-card-image w-[7em] h-[7em] rounded-full absolute box-shadow-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                   src={customer1}
@@ -55,7 +55,7 @@ function Customer() {
                 </div>
               </div>
             </div>
-            <div className="customer-card bg-white rounded-md w-[15em] h-[17em] relative box-shadow-1">
+            <div className="customer-card bg-white rounded-md w-[15em] h-[19em] relative box-shadow-1">
               <div className="customer-card-image w-[7em] h-[7em] rounded-full absolute box-shadow-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                   src={customer2}
@@ -94,7 +94,7 @@ function Customer() {
               </div>
             </div>
 
-            <div className="customer-card bg-white rounded-md w-[15em] h-[17em] relative box-shadow-1">
+            <div className="customer-card bg-white rounded-md w-[15em] h-[19em] relative box-shadow-1">
               <div className="customer-card-image w-[7em] h-[7em] rounded-full absolute box-shadow-2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
                 <Image
                   src={customer3}
