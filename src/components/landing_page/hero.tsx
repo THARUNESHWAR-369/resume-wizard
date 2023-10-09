@@ -1,10 +1,14 @@
+"use client";
 
-import React from 'react'
+import React from "react";
 import Image from "next/image";
 import logo from "@public/images/logo/logo2.png";
 import heroImg from "@public/images/hero/hero.png";
+import { useRouter } from "next/navigation";
 
 export const Hero = () => {
+  const router = useRouter();
+
   return (
     <section className="hero h-fit mb-[8em] pt-[2em]">
       <div className="hero-container pt-[1em] relative">
@@ -36,7 +40,11 @@ export const Hero = () => {
               <h4 className="text-foreground-accent-color-2 font-semibold text-4xl text-shadow-2  max-w-[14em]">
                 Impress Employers with Well-Designed Resumes
               </h4>
-              <button className="border-foreground-accent-color-3 text-foreground-accent-color-3 border-[3px] p-1 px-2 font-bold rounded-full my-5 hover:text-white hover:bg-foreground-accent-color-4 hover:border-foreground-accent-color-4 transition duration-300 max-xl370:box-shadow-35">
+              <button
+                type="button"
+                onClick={() => router.push("/account/signup")}
+                className="border-foreground-accent-color-3 text-foreground-accent-color-3 border-[3px] p-1 px-2 font-bold rounded-full my-5 hover:text-white hover:bg-foreground-accent-color-4 hover:border-foreground-accent-color-4 transition duration-300 max-xl370:box-shadow-35"
+              >
                 Get Started
               </button>
             </div>
@@ -48,5 +56,5 @@ export const Hero = () => {
       </div>
     </section>
   );
-}
+};
 export default Hero;

@@ -8,7 +8,7 @@ import Why from "@components/landing_page/why";
 
 export default function Home() {
   return (
-    <main className="w-full h-full max-w-[68em] p-3 m-auto max-md:max-w-full">
+    <main className="w-full h-full max-w-[68em] pl-6 pr-6 p-3 m-auto max-md:max-w-full">
       <Hero/>
       <Process/>
       <Why/>
