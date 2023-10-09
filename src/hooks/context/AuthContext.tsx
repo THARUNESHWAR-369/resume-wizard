@@ -10,6 +10,7 @@ import {
 import { fb_auth } from "src/firebase_config/config";
 import { UserType } from "src/constants/auth-constants/auth.constant.interface";
 import { useRouter } from "next/navigation";
+import firebase_signup from "../auth/firebase-auth/firebase-auth";
 
 const AuthContext = createContext({});
 
@@ -38,7 +39,7 @@ export const AuthContextProvider = ({
         router.push("/dashboard");
       } else {
         setUser({ email: null, uid: null });
-        router.push("/account/signin");
+        router.push("/");
       }
     });
     console.log("loading: ", loading);
@@ -49,8 +50,8 @@ export const AuthContextProvider = ({
   }, []);
 
   // Sign up the user
-  const signUp = (email: string, password: string) => {
-    return createUserWithEmailAndPassword(fb_auth, email, password);
+  const signUp = (email: string, password: string, username:any) => {
+    return firebase_signup(email, password, username);
   };
 
   // Login the user
