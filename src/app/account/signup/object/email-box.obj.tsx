@@ -1,3 +1,4 @@
+import Link from "next/link";
 import IValidateCallback from "../interface/signup.interfaces";
 
 /* Get email object */
@@ -6,7 +7,9 @@ export function emailObject(validateCallBack: IValidateCallback) {
   return (
     <div className="email-object w-full h-full p-4 relative">
       <div className="email-object-cont">
-        <h3 className="font-normal">Tell your Email?</h3>
+        <span className="flex ">
+          <h3 className="font-normal">Tell your Email?</h3>
+        </span>
         <div className="divider bg-slate-500"></div>
         <div
           className="error-container p-1 text-foreground-accent-color-1 font-bold text-sm hidden"
@@ -43,7 +46,10 @@ export function emailObject(validateCallBack: IValidateCallback) {
             />
           </div>
         </div>
-        <div className="object-button pb-2 pt-3 relative w-full">
+        <div className="object-button pb-2 pt-3 relative w-full flex justify-between align-middle items-center">
+          <Link href="/account/signin" className="h-fit">
+            <p className="text-xs font-semibold underline text-gray-500">Already have an account?</p>
+          </Link>
           <div className="get-otp-btn float-right " id="get-otp-btn">
             <button
               onClick={(e) => {

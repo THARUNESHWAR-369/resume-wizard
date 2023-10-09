@@ -1,4 +1,7 @@
 "use client";
+
+import Image from "next/image";
+import googleImg from "@public/images/accounts/google.png";
 import React, { useState, useEffect, FormEvent } from "react";
 import Base_Nav from "@components/base/_base_nav";
 import CenterBoxObj from "@components/objects/centerBoxObj";
@@ -7,7 +10,6 @@ import {
   Signup_GoToNextObject,
   Signup_getElement,
 } from "./constant/signupConstant";
-import AuthSignup from "./model/signup";
 import {
   InputEmailValidationOnChange,
   InputPasswordValidationOnChange,
@@ -39,7 +41,7 @@ export default function Home() {
   // Disable submit button until all fields are filled in
   const canSubmit = [...Object.values(allData)].every(Boolean);
 
-  console.log("\n\ncanSubmit: ", canSubmit  );
+  console.log("\n\ncanSubmit: ", canSubmit);
 
   const validate: IValidateCallback = async (id: string, onClick = false) => {
     if (id === ESignupConstant.INPUT_EMAIL) {
@@ -67,9 +69,9 @@ export default function Home() {
           });
 
           try {
-            await signUp(data.email, passwordElement.value);
-            router.push('/dashboard');
-          }catch(error:any) {
+            await signUp(data.email, passwordElement.value, data.username);
+            router.push("/dashboard");
+          } catch (error: any) {
             console.log(error.message);
           }
           console.log("Data: ", data);
@@ -111,8 +113,17 @@ export default function Home() {
         <div className="show-password-obj hidden" id="show-password-obj">
           <CenterBoxObj>{passwordObject(validate, canSubmit)}</CenterBoxObj>
         </div>
+
+        <span className="m-auto text-gray-600/60 w-full text-center flex justify-center p-3"> --OR-- </span>
+
+        <div className="accounts-signin-google border-2 p-2 w-[3em] h-[3em] rounded-full cursor-pointer m-auto hover:bg-foreground-accent-color-2/50">
+          <Image
+            src={googleImg}
+            alt="google-auth"
+            className="w-full h-full rounded-full"
+          />
+        </div>
       </main>
     </section>
   );
 }
-
