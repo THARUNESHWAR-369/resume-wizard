@@ -4,7 +4,6 @@ import "@styles/landing_page/landing_page.css";
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import Footer from "@components/footer";
-import { AuthContextProvider } from "src/hooks/context/AuthContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <AuthContextProvider>{children}</AuthContextProvider>
+        {children}
         <Footer />
       </body>
     </html>

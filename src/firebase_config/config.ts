@@ -8,8 +8,8 @@
 
 
 import { initializeApp, getApps } from "firebase/app";
-import { getFirestore, collection, getDocs } from "firebase/firestore/lite";
 import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -24,5 +24,5 @@ const firebaseConfig = {
 if (!getApps().length) {
  initializeApp(firebaseConfig);
 }
-export const fb_db = getFirestore();
 export const fb_auth = getAuth();
+export const fb_db = getFirestore();
