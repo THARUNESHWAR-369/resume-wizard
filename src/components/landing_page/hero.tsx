@@ -42,7 +42,7 @@ export const Hero = () => {
               </h4>
               <button
                 type="button"
-                onClick={() => router.push("/account/signup")}
+                onClick={() => router.push("/account/auth")}
                 className="border-foreground-accent-color-3 text-foreground-accent-color-3 border-[3px] p-1 px-2 font-bold rounded-full my-5 hover:text-white hover:bg-foreground-accent-color-4 hover:border-foreground-accent-color-4 transition duration-300 max-xl370:box-shadow-35"
               >
                 Get Started
