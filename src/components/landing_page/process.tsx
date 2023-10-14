@@ -58,7 +58,7 @@ function Process() {
                   </div>
                 </div>
 
-                <div className="card border-none outline-none box-shadow-1 w-[12em] h-fit">
+                <div className="card border-none outline-none box-shadow-15 p-[1em] rounded-md w-[12em] h-fit">
                   <div className="card-body">
                     <div className="card-title">
                       <h3 className="font-bold text-center text-foreground-accent-color-3">
@@ -76,7 +76,7 @@ function Process() {
                   </div>
                 </div>
 
-                <div className="card border-none outline-none box-shadow-1 w-[12em] h-fit">
+                <div className="card border-none outline-none box-shadow-15 p-[1em] rounded-md w-[12em] h-fit">
                   <div className="card-body">
                     <div className="card-title">
                       <h3 className="font-bold text-center text-foreground-accent-color-3">
@@ -94,7 +94,7 @@ function Process() {
                   </div>
                 </div>
 
-                <div className="card border-none outline-none box-shadow-1 w-[12em] h-fit">
+                <div className="card border-none outline-none box-shadow-15 p-[1em] rounded-md w-[12em] h-fit">
                   <div className="card-body">
                     <div className="card-title">
                       <h3 className="font-bold text-center text-foreground-accent-color-3">
