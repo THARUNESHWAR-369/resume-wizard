@@ -7,17 +7,21 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "start:dev": "next build && next dev"
+    "start:dev": "next build && next dev -p 3001"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.38.0",
     "appwrite": "^13.0.0",
     "axios": "^1.5.1",
+    "cookie": "^0.5.0",
+    "cookies": "^0.8.0",
+    "cookies-next": "^4.0.0",
     "dashify": "^2.0.0",
     "firebase": "^10.4.0",
     "firebase-admin": "^11.11.0",
     "next": "latest",
     "react": "latest",
+    "react-cookie": "^6.1.1",
     "react-dom": "latest",
     "sass": "^1.68.0",
     "sharp": "^0.32.6",

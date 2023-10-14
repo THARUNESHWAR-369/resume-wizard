@@ -1,6 +1,6 @@
 "use client";
 
-import Base_Nav from "@components/base/_base_nav";
+import Base_Nav from "@/components/base/_base_nav";
 import Link from "next/link";
 
 export default function Custom404() {
