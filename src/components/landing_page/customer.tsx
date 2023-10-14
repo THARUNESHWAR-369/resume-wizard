@@ -6,7 +6,7 @@ import customer1 from "@public/images/customer/customer-1.jpg";
 
 function Customer() {
   return (
-    <section className="customer dark:bg-gray-900">
+    <section className="customer">
       <div className="customer-container">
         <h2 className=" font-bold text-4xl text-center text-shadow-15">
           What Our{" "}

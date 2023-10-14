@@ -18,7 +18,7 @@ function Why() {
         </div>
         <div className="why-cards pt-2">
           <div className="cards">
-            <div className="card border-none outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
+            <div className="card border-none bg-white outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
               <div className="card-body">
                 <div className="card-title">
                   <h3 className="font-bold text-center text-foreground-accent-color-3">
@@ -36,7 +36,7 @@ function Why() {
               </div>
             </div>
 
-            <div className="card border-none outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
+            <div className="card border-none bg-white outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
               <div className="card-body">
                 <div className="card-title">
                   <h3 className="font-bold text-center text-foreground-accent-color-3">
@@ -52,8 +52,7 @@ function Why() {
                 </div>
               </div>
             </div>
-
-            <div className="card border-none outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
+            <div className="card border-none bg-white outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
               <div className="card-body">
                 <div className="card-title">
                   <h3 className="font-bold text-center text-foreground-accent-color-3">
@@ -71,7 +70,7 @@ function Why() {
               </div>
             </div>
 
-            <div className="card border-none outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
+            <div className="card border-none bg-white outline-none box-shadow-15 rounded-md p-[1em] w-[12em] h-fit">
               <div className="card-body">
                 <div className="card-title">
                   <h3 className="font-bold text-center text-foreground-accent-color-3">
