@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import googleImg from "@public/images/accounts/google.png";
-import React, { useLayoutEffect, useEffect } from "react";
+import React, {useMemo } from "react";
 import { useAuth } from "@/hook/context/auth-context";
 import {useRouter} from "next/navigation";
 
@@ -11,7 +11,7 @@ function GoogleOAuthBtn() {
 
   const router = useRouter();
 
-  useEffect(() => {
+  useMemo(() => {
     console.log("use layout effect", error, user);
     if (error) {
       console.log(error);

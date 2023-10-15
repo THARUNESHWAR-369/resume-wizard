@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} w-full h-full max-w-[68em] pl-6 pr-6 p-3 m-auto max-md:max-w-full`}
+      >
         <AuthProvider>
           <FirebaseOnAuthStateChanged>
             {children}

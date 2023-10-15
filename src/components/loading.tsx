@@ -2,7 +2,7 @@ import React from "react";
 
 function LoaderComponent() {
   return (
-    <div className="loader h-[100vh] w-full flex justify-center align-middle items-center transition-opacity duration-300">
+    <div className="overflow-hidden loader h-[100vh] w-full flex justify-center align-middle items-center transition-opacity duration-300">
       <div className="loader-container w-full flex justify-center flex-col align-middle relative">
         <svg
             xmlns="http://www.w3.org/2000/svg"
