@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "@public/images/logo/logo2.png";
 import { useAuth } from "@/hook/context/auth-context";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 function BaseProtectedNav() {
   const { user, logout, error } = useAuth();
@@ -59,7 +60,12 @@ function BaseProtectedNav() {
 
         <div className="right-base-protected-nav right flex flex-row gap-4 align-middle items-center">
           <div className="nav-bar-profile-desktop-screen max-md:hidden">
-            <button className="bg-gradient-to-tr z-10 from-foreground-accent-color-1 via-foreground-accent-color-2 to-foreground-accent-color-3 text-white px-3 rounded-md h-[2.5em] font-medium hover:opacity-70">
+            <button
+              onClick={() => {
+                window.location.href = "/dashboard/create-resume";
+              }}
+              className="bg-gradient-to-tr z-10 from-foreground-accent-color-1 via-foreground-accent-color-2 to-foreground-accent-color-3 text-white px-3 rounded-md h-[2.5em] font-medium hover:opacity-70"
+            >
               <strong className="font-bold">+</strong> Create
             </button>
           </div>
@@ -78,13 +84,17 @@ function BaseProtectedNav() {
               />
             </div>
             <div
-              className={`nav-bar-profile-dropdown absolute top-[4.5em]  before:content=[''] before:block before:transform before:rotate-45 before:right-3 before:-top-1 before:w-[25px] before:h-[25px] before:bg-white before:-z-15 before:absolute before:box-shadow-3 bg-white max-w-[10em] transition-all duration-300 box-shadow-2 w-[15em] right-1 rounded-md ${
-                navProfilePicDropdown ? "block" : "hidden "
-              }`}
+              className={`nav-bar-profile-dropdown absolute top-[4.5em] z-22 before:content=[''] before:block before:transform before:rotate-45 before:right-3 before:-top-1 before:w-[25px] before:h-[25px] before:bg-white before:-z-15 before:absolute before:box-shadow-3 bg-white max-w-[10em] transition-all duration-300 box-shadow-2 w-[15em] right-1 rounded-md ${navProfilePicDropdown ? "block" : "hidden "
+                }`}
             >
-              <div className="nav-bar-profile-dropdown-container h-[100%] p-[0.5em] flex flex-col justify-center align-middle items-center">
+              <div className="nav-bar-profile-dropdown-container h-[100%] p-[0.5em] flex flex-col justify-center align-middle items-center z-2">
                 <div className="nav-bar-profile-dropdown-mobile-screen z-10 hidden max-md:block">
-                  <button className="bg-gradient-to-tr z-10 from-foreground-accent-color-1 via-foreground-accent-color-2 to-foreground-accent-color-3 text-white px-3 rounded-md h-[2.5em] font-medium hover:opacity-70">
+                  <button
+                    onClick={() => {
+                      window.location.href = "/dashboard/create-resume";
+                    }}
+                    className="bg-gradient-to-tr z-10 from-foreground-accent-color-1 via-foreground-accent-color-2 to-foreground-accent-color-3 text-white px-3 rounded-md h-[2.5em] font-medium hover:opacity-70"
+                  >
                     <strong className="font-bold">+</strong> Create
                   </button>
                   <div className="divider"></div>
@@ -97,6 +107,10 @@ function BaseProtectedNav() {
                 >
                   Logout
                 </h6>
+                <div className="divider"></div>
+
+                <Link className="text-center flex justify-center align-middle h-full cursor-pointer font-bold flex-col hover:bg-white/50 dark:text-foreground-accent-color-3 dark:hover:text-foreground-accent-color-2 hover:text-foreground-accent-color-2"
+                  href="/dashboard/settings">Settings</Link>
               </div>
               {/* <span className="w-[25px] h-[25px] bg-white box-shadow-35 -z-20 absolute transform rotate-45 right-3 -top-1"></span> */}
             </div>

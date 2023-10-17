@@ -1,6 +1,8 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+
 
 const firebaseConfig = {
   apiKey:process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -16,3 +18,4 @@ export const fb_app = initializeApp(firebaseConfig);
 export const fb_auth = getAuth(fb_app);
 
 export const googleAuthProvider = new GoogleAuthProvider();
+export const fb_db = getFirestore(fb_app);

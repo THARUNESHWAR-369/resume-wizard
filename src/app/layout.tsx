@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} w-full h-full max-w-[68em] pl-6 pr-6 p-3 m-auto max-md:max-w-full`}
+        className={`${inter.className} w-full h-full max-w-[68em] pl-6 pr-6 p-3 m-auto max-md:max-w-full relative`}
       >
         <AuthProvider>
           <FirebaseOnAuthStateChanged>

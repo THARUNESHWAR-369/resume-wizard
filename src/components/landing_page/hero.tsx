@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo from "@public/images/logo/logo2.png";
 import heroImg from "@public/images/hero/hero.png";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export const Hero = () => {
   const router = useRouter();
@@ -40,13 +41,13 @@ export const Hero = () => {
               <h4 className="text-foreground-accent-color-2 font-semibold text-4xl text-shadow-2  max-w-[14em]">
                 Impress Employers with Well-Designed Resumes
               </h4>
-              <button
-                type="button"
-                onClick={() => router.push("/account/auth")}
-                className="border-foreground-accent-color-3 text-foreground-accent-color-3 border-[3px] p-1 px-2 font-bold rounded-full my-5 hover:text-white hover:bg-foreground-accent-color-4 hover:border-foreground-accent-color-4 transition duration-300 max-xl370:box-shadow-35"
+              <br/>
+              <Link
+              href={"/account/auth"}
+                className="border-foreground-accent-color-3 text-foreground-accent-color-3 border-[3px] p-1 px-2 py-2  font-bold rounded-full my-5 hover:text-white hover:bg-foreground-accent-color-4 hover:border-foreground-accent-color-4 transition duration-300 max-xl370:box-shadow-35"
               >
                 Get Started
-              </button>
+              </Link>
             </div>
           </div>
           <div className="hero-img overflow-clip w-full hero-box-shadow max-w-[35em]">
